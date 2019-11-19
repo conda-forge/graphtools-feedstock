@@ -1,5 +1,5 @@
 {% set name = "graphtools" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 82faebd99fd27de8a5ddb0ea4d0388b69c2137a2a528dbaca344cb78512aa577
+  sha256: 169e4be6722a75236584cc7a16987bb04d9037549123e7c615f51e69ab145611
 
 build:
   number: 0
