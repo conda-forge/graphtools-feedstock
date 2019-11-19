@@ -1,31 +1,31 @@
 {% set name = "graphtools" %}
-{% set version = "1.1.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: https://github.com/KrishnaswamyLab/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 57b5d196b9a58d4d7b1292c99f588a7fc45e1a5a794f8a456d554d6f095f5ddf
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 169e4be6722a75236584cc7a16987bb04d9037549123e7c615f51e69ab145611
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.5
   run:
     - future
     - numpy >=1.14.0
     - pygsp >=0.5.1
-    - python >=3.6
-    - scikit-learn >=0.19.1
+    - python >=3.5
+    - scikit-learn >=0.20.0
     - scipy >=1.1.0
-    - tasklogger >=0.2
+    - tasklogger >=1.0
 
 test:
   imports:
@@ -41,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - bebatut
+    - scottgigante
