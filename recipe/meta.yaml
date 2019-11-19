@@ -6,12 +6,12 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://github.com/KrishnaswamyLab/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 714f1777229cbac5b3475872f36fd3e0e14bfa3375b3597b193d5762df5deb0d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 82faebd99fd27de8a5ddb0ea4d0388b69c2137a2a528dbaca344cb78512aa577
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
