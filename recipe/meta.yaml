@@ -1,17 +1,17 @@
 {% set name = "graphtools" %}
-{% set version = "1.4.2" %}
+{% set version = "1.5.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 094a7c975ebbeb57e86030a591ac7ac89c9aed2db78632dcfd3921637124f1fa
+  sha256: 1be06b4d6a17bd47393d030734b4860d7844448560b74dd4023faebaf9dc188c
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
