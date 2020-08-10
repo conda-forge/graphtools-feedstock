@@ -5,7 +5,7 @@ Home: https://github.com/KrishnaswamyLab/graphtools
 
 Package license: GPL-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: graphtools, tools for building and manipulating graphs in Python.
 
