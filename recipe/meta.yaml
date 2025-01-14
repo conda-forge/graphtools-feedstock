@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - future
@@ -36,7 +37,7 @@ test:
 
 about:
   home: https://github.com/KrishnaswamyLab/graphtools
-  license: GPL-2.0
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: graphtools, tools for building and manipulating graphs in Python.
