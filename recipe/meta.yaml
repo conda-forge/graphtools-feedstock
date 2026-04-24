@@ -1,13 +1,13 @@
 {% set name = "graphtools" %}
-{% set version = "1.5.3" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b35ae2974d24c507fe01b110d10b1d8c949e20bc49ff9d7d04f94849f9795907
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ffeeb042b927422c990233e51fb7fe0afb42c4345ec1ca1d8926d9a0e6bd0fe8
 
 build:
   number: 0
